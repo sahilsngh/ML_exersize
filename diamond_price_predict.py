@@ -16,7 +16,7 @@ last_time = time.time()
 #If this section_code doesn't work you can try to download the csv file and retrieve it locally on your pc.
 url = 'https://raw.githubusercontent.com/sahilsngh/ML_exersize/master/diamonds.csv'
 df = pd.read_csv(url, error_bad_lines=True, index_col=0)
-print(f"Time takas to download the file:{last_time-time.time()}")
+print(f"Time takas to download the file:{time.time()-last_time} seconds")
 
 #creating a dictionaries to get the numerical values for non-numerical columns. 
 cut_dict = {"Fair": 5 , "Good": 4 , "Very Good": 3 , "Premium": 2 , "Ideal": 1} 
