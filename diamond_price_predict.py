@@ -69,7 +69,7 @@ for X,y in zip(X_train, y_train):
   a += 1
   if a == 500:
     break
-
+print('Done')
 
 
 
